@@ -1,0 +1,127 @@
+@import 'colors/one-dark.css';
+
+* {
+	border: none;
+	border-radius: 0px;
+	
+	font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+	min-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    border-style: solid;
+    border-image-source: url("/home/Chive/.config/waybar/assets/ornate-border.svg");
+    border-image-slice: 100 fill;
+    border-image-width: 30px;
+    border-image-repeat: round;
+}
+
+#tooltip {
+	background: @eerieblack;
+	border: 1px solid @white;
+	border-radius: 12px;
+}
+
+#tooltip label {
+	color: @fg;
+	padding: 6px;
+}
+
+#workspaces {
+	background-color: transparent;
+	padding: 5px 3px;
+	margin: 0px 12px 0 12px;
+	border: 2px solid @grey2;
+	border-radius: 6px;
+	color: @fg;
+}
+
+#workspaces button {
+	min-width: 35px;
+	min-height: 35px;
+	padding: 3px 3px;
+	margin: 0px 3px;
+	border: 2px solid @vampireblack;
+	border-radius: 5px;
+	color: @grey0;
+	font-family: "Symbola", sans serif;
+	font-size: 35px;
+	background-color: @smokyblack;
+	transition: all 0.3s ease-out;
+}
+
+#workspaces button.active {
+	background-color: @eerieblack;
+	color: @white;
+	/*min-width: 25px;*/
+	transition: all 0.3s ease-out;
+	font-size: 20px;
+}
+
+#workspaces button:hover {
+	background-color: @eerieblack;
+	color: @black;
+	border-radius: 5px;
+	/*min-width: 25px;*/
+	background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+	background-color: @red;
+}
+
+#custom-notification {
+	margin: 0px 0px 10px 0px;
+	color: @white;
+	background-color: @transparent;
+}
+
+#clock {
+	font-family: "Jasper Daniels", sans-serif;
+	font-size: 35px;
+	margin: 30px 0px 10px 0px;
+	color: @white;
+}
+
+#pulseaudio {
+	font-family: "Jasper Daniels", sans-serif;
+	font-size: 25px;
+	color: @white;
+	background-color: transparent;
+	margin: 0px 0px 20px 0px;
+}
+
+#network {
+	font-family: "Jasper Daniels", sans-serif;
+	font-size: 30px;
+	color: @white;
+	margin: 0px 0px 30px 0px;
+}
+
+#tray {
+	margin: 20px 20px 0px 20px;
+}
+
+#cpu {
+	font-family: "Jasper Daniels", sans-serif;
+	font-size: 25px;
+	color: @white;
+	margin: 0px 0px 20px 0px;
+}
+
+#memory {
+	font-family: "Jasper Daniels", sans-serif;
+	font-size: 25px;
+	color: @white;
+	margin: 0px 0px 20px 0px;
+}
+
+#sysstats {
+	margin: 0px 0px 0px 18px;
+}
