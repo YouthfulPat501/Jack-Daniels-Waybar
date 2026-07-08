@@ -54,7 +54,7 @@
 "pulseaudio": {
 	"rotate": 90,
 	"format": "  {volume}% 
-🎙  {source_volume}%",
+🎙 {source_volume}%",
 	"format-bluetooth": "{volume}% {icon}",
 	"format-muted": "",
 	"format-icons": {
